@@ -59,18 +59,34 @@
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.wave {
+  z-index: -1;
+  background-color: transparent;
+  position: absolute;
+}
+
 .section1 {
   margin-bottom: 20px;
+  z-index: 2;
 }
 
 .topleft {
-  padding-left: 20px;
-  width: 50%;
+  padding: 30px;
+  width: 72%;
   height: 50vh;
+  margin-left: 20px;
+  margin-right: auto;
   margin-top: 20px;
-  background-color: black;
+  background: linear-gradient(
+    to right bottom,
+    rgba(48, 48, 48, 0.7),
+    rgba(255, 0, 0, 0.3)
+  );
   color: white;
   font-family: "Raleway", sans-serif;
+  border-radius: 2rem;
+  backdrop-filter: blur(2rem);
 }
 
 .topleft h1 {
@@ -142,6 +158,15 @@
   color: red;
 }
 
-hr {
-  border-top: 1px dotted #8c8b8b;
+/* ++++++++++++++++++++++++++++++++++++++Organizers++++++++++++++++++++++++++++++++++++++++++ */
+
+.organizers {
+  z-index: 2;
+  width: 80vw;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 800px;
+  border-radius: 35px;
+  background-color: black;
 }
